@@ -1,0 +1,78 @@
+
+.panels .panel1{
+	background-image: url(../img/panel1.jpg);
+	background-size: cover;
+}
+
+.panels .panel2{
+	background-image: url(../img/panel2.jpg);
+	background-size: cover;
+}
+
+
+.panels .panel3{
+	background-image: url(../img/panel3.jpg);
+	background-size: cover;
+}
+
+
+.panels .panel4{
+	background-image: url(../img/panel4.jpg);
+	background-size: cover;
+}
+
+
+.panels .panel5{
+	background-image: url(../img/panel5.jpg);
+	background-size: cover;
+}
+
+
+.panels{
+	display: flex;
+	height: 100vh;
+	overflow: hidden;
+
+
+}
+.panels .panel{
+	color: white;
+	font-size: 20pt;
+	font-weight: bolder;
+	text-align: center;
+	text-shadow: 1px 2px #000;
+	margin: 0;
+	padding: 0;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	transition: all 1s cubic-bezier(0, 0, 0, 1.59);
+	
+}
+.panels .panel p{
+	margin: 0;
+}
+.panel>*{
+	flex: 1 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition:0.5s ease-out;
+
+}
+
+.panels .open{
+	flex:3;
+	font-size: 30pt;
+}
+
+.panel>*:first-child{transform: translatey(-100%);}
+.panel.open-active >*:first-child{transform: translateY(0);}
+.panel>*:last-child{transform: translatey(100%);}
+.panel.open-active >*:last-child{transform: translateY(0);}
+
+
+
+
+
